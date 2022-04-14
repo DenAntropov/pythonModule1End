@@ -1,8 +1,10 @@
 def solution(n):
-    for i in range(n):
-        for j in range(n):
-            if i * 4 + j * 2 == n:
-                print("Возможно {} кроликов и {} гусей".format(i, j))
+    LEGS_RABBIT = 4
+    LEGS_DUCKS = 2
+    for rabbit in range(n):
+        for ducks in range(n):
+            if rabbit * LEGS_RABBIT + ducks * LEGS_DUCKS == n:
+                print(f"Возможно {rabbit} кроликов и {ducks} гусей")  # todo f-string
 
 
 if __name__ == "__main__":

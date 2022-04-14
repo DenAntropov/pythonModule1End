@@ -1,7 +1,7 @@
 def check(i):
     n = 0
     while i > 1:
-        if i % 2 == 0:
+        if i % 2 == 0:  # i = i // 2 if i % 2 == 0 else 3 * i + 1
             i = i // 2
         else:
             i = 3 * i + 1
